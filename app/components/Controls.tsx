@@ -90,7 +90,7 @@ export const Controls: React.FC = () => {
           value={selectedAlgorithm}
           onChange={(e) => useVisualizerStore.setState({ selectedAlgorithm: e.target.value as Algorithm })}
         >
-          <option value="dijkstra">Dijkstra's Algorithm</option>
+          <option value="dijkstra">Dijkstra&apos;s Algorithm</option>
           <option value="astar">A* Search</option>
           <option value="bfs">Breadth-First Search</option>
           <option value="dfs">Depth-First Search</option>

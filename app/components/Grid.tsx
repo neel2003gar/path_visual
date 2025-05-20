@@ -41,9 +41,6 @@ const Node: React.FC<NodeProps> = ({ node, onNodeClick, onNodeDrag }) => {
 export const Grid: React.FC = () => {
   const {
     grid,
-    startNode,
-    endNode,
-    isDragging,
     toggleWall,
     setStartNode,
     setEndNode
