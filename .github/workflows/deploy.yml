@@ -30,10 +30,13 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Build with Next.js
-        run: npm run build
+        run: npm ci      - name: Build with Next.js
+        env:
+          NODE_ENV: production
+        run: |
+          npm run build
+          touch out/.nojekyll
+          ls -la out/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

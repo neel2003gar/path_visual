@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Allow static page generation
   trailingSlash: true,
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/path_visual' : ''
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/path_visual' : '',
+  reactStrictMode: true,
+  swcMinify: true
 };
 
 export default nextConfig;
