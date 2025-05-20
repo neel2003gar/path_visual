@@ -1,7 +1,7 @@
 'use client';
 
 import { create } from 'zustand';
-import { GridNode, VisualizerState } from '../types/grid';
+import { GridNode, NodeType, VisualizerState } from '../types/grid';
 
 const createInitialGrid = (rows: number, cols: number): GridNode[][] => {
   const grid: GridNode[][] = [];
